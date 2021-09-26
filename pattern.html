@@ -10,14 +10,14 @@
 <form name="myform" method="POST" >
     <div class="col-md-12 text-center my-3">
 <div class="form-group">
-    <label for="formGroupExampleInput">Enter the String Value</label><br>
+    <label for="formGroupExampleInput">Enter the number </label><br>
     <input type="text" placeholder="Enter the input string" name="input" id="input"><br><br>
   </div>
   <input type="button" value="submit" class="btn btn-dark m-4" onclick="validate_form()">
 
 </div>
 </form>  
-  <p class="col-md-12 text-center ">The total number of length is</p>
+  <p class="col-md-12 text-center ">The total number of pyramid pattern is</p>
   <br>
   <br>
    <h4 class="mx-5" id="demo"></h4>
@@ -31,6 +31,12 @@
     let text = "";
 
 for (let i = 0; i <= n; i++) {
+	for(j=1; j<=i; j++){
+    text = text + j + "";
+    }
+  text = text + "<br>";
+}
+	    for (let i = 10; i >= n; i--) {
 	for(j=1; j<=i; j++){
     text = text + j + "";
     }
