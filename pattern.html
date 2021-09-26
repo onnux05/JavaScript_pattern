@@ -46,6 +46,38 @@ document.getElementById("demo").innerHTML = text;
 }
 </script>
 
+	<h2>JavaScript For Loop</h2>
+<form name="myform" method="POST" >
+<div class="form-group">
+    <label for="formGroupExampleInput">Enter the number Value</label><br>
+    <input type="text" placeholder="Enter the input string" name="input" id="input1"><br><br>
+  </div>
+  <input type="button" value="submit" class="btn btn-dark m-4" onclick="validate_form1()">
+
+                </form>
+<p id="demo1"></p>
+
+<script>
+ function validate_form1(input1){
+ let y = document.getElementById("input1").value;
+var text1 = "";
+
+for (let i = 0; i < y; i++) {
+	for(j=1; j<=i; j++){
+    text1 = text1 + j + "";
+    }
+  text1 = text1 + "<br>";
+}
+for (let i = y; i >= 0; i--) {
+	for(j=1; j<=i; j++){
+    text1 = text1 + j + "";
+    }
+  text1 = text1 + "<br>";
+}
+
+document.getElementById("demo1").innerHTML = text1;
+}
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
