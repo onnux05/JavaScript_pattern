@@ -23,34 +23,28 @@
   <br>
    <h4 class="mx-5" id="demo"></h4>
 
-  <script>
-    
-    
-    function validate_form(input){
-    let n = document.getElementById("input").value;
-    
-    let text = "";
+  
+<script>
+ function validate_form(input){
+ let n = document.getElementById("input").value;
+var text = "";
 
 for (let i = 0; i <= n; i++) {
 	for(j=1; j<=i; j++){
-    text = text + j + "";
+    text = text + "*";
     }
   text = text + "<br>";
 }
-	    for (let i = 10; i >= n; i--) {
+for (let i = n; i >= 0; i--) {
 	for(j=1; j<=i; j++){
-    text = text + j + "";
+    text = text + "*";
     }
   text = text + "<br>";
 }
 
 document.getElementById("demo").innerHTML = text;
-    
 }
-    
-    
-    
-    </script>
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
