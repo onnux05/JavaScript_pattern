@@ -36,7 +36,7 @@ for (let i = 0; i <= n; i++) {
     }
   text = text + "<br>";
 }
-for (let i = n; i >= 0; i--) {
+for (let i = (n-1); i >= 0; i--) {
 	for(j=1; j<=i; j++){
     text = text + "*";
     }
@@ -69,13 +69,13 @@ document.getElementById("demo").innerHTML = text;
  let y = document.getElementById("input1").value;
 var text1 = "";
 
-for (let i = 0; i < y; i++) {
+for (let i = 0; i <= y; i++) {
 	for(j=1; j<=i; j++){
-    text1 = text1 + j + "," + "";
+    text1 = text1 + j  + "";
     }
   text1 = text1 + "<br>";
 }
-for (let i = y; i >= 0; i--) {
+for (let i = (y -1); i >= 0; i--) {
 	for(j=1; j<=i; j++){
     text1 = text1 + j + "," + "";
     }
