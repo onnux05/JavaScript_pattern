@@ -26,7 +26,7 @@
 
   
 <script>
- function validate_form(input){
+ function validate_form(){
  let n = document.getElementById("input").value;
 var text = "";
 
@@ -65,7 +65,7 @@ document.getElementById("demo").innerHTML = text;
    <h4 class="mx-5" id="demo1"></h4>
 
 <script>
- function validate_form1(input1){
+ function validate_form1(){
  let y = document.getElementById("input1").value;
 var text1 = "";
 
@@ -85,6 +85,90 @@ for (let i = (y -1); i >= 0; i--) {
 document.getElementById("demo1").innerHTML = text1;
 }
 </script>
+    
+    
+    <form name="myform" method="POST" >
+    <div class="col-md-12 text-center my-3">
+<div class="form-group">
+	<h1> Reverse String</h1>
+
+    <label for="formGroupExampleInput">Enter the String </label><br>
+    <input type="text" placeholder="Enter the string numbers" name="input" id="input2"><br><br>
+  </div>
+  <input type="button" value="submit" class="btn btn-dark m-4" onclick="reverse()">
+
+</div>
+</form>  
+  <p class="col-md-12 text-center ">The Reverse String is</p>
+  <br>
+  <br>
+   <h4 class="mx-5" id="demo4"></h4>
+    
+<script>
+    
+    function reverse(){
+        
+     let reverseString =   document.getElementById("input2").value;
+        
+        var output = "";
+        
+       
+         output = reverseString.split("").reverse().join("");
+        
+        document.getElementById("demo4").innerHTML = output;
+        
+    }
+    
+    </script>
+    
+    <!-- THE Palindrome --->
+    
+       <form name="myform" method="POST" >
+    <div class="col-md-12 text-center my-3">
+<div class="form-group">
+	<h1> Palindrome String</h1>
+
+    <label for="formGroupExampleInput">Enter the String </label><br>
+    <input type="text" placeholder="Enter string " name="input" id="input3"><br><br>
+  </div>
+  <input type="button" value="submit" class="btn btn-dark m-4" onclick="Palindrome()">
+
+</div>
+</form>  
+  <p class="col-md-12 text-center ">The Palindrome String is</p>
+  <br>
+  <br>
+   <h4 class="mx-5" id="demo5"></h4>
+    
+<script>
+    
+    function Palindrome(){
+        
+     let PalindromeString  =   document.getElementById("input3").value;
+        
+       
+        
+     var output = "";
+        
+ 
+       
+        var a = PalindromeString.split("").reverse().join("");
+        
+        
+            if(PalindromeString == a){
+               document.getElementById("demo5").innerHTML = ("The Given String is a Palindrome");
+            }
+                else{
+                    
+           document.getElementById("demo5").innerHTML = ("The Given String is not a Palindrome");
+                
+                }
+        
+            }
+        
+    
+    
+    </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
